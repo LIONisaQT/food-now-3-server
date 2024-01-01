@@ -4,6 +4,7 @@ const port = process.env.port || 3001;
 const cors = require('cors');
 const yelp = require('yelp-fusion');
 const bodyParser = require('body-parser');
+import 'dotenv/config';
 const apiKey = process.env.API_KEY;
 const client = yelp.client(apiKey);
 
