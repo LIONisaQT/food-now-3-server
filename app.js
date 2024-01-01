@@ -4,7 +4,7 @@ const port = process.env.port || 3001;
 const cors = require('cors');
 const yelp = require('yelp-fusion');
 const bodyParser = require('body-parser');
-const apiKey = 'oSldbNmG36meLbE645co-NNejWIAEuvVTexQKRgurlmHQNUYk1efTV9oPtqqIhvP73jYz_RZNdfyPmN5u14kXOPwoqm-ccgSCIJMDZq3aMaL807PDztU2BVCKrU0XXYx';
+const apiKey = process.env.API_KEY;
 const client = yelp.client(apiKey);
 
 app.use(cors());
